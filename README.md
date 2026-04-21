@@ -1,4 +1,8 @@
 # InkTime Smartwatch
+<video controls width="550">
+  <source src=".\Mechanical\exploding_view.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
 
 ### Main components:
 <ol>
@@ -65,13 +69,20 @@ Address mapping(7-bit addresses) on the I<sup>2</sup>C interface:
 <ol>
 <li> Signals - most of the signal are connected here; also few components are tied
 together group by 2 or 3 on top before via stitching to the GND or power.</li>
+<img src="Images/top_layer.png", alt="1.Top layer"><br><br>
+
 <li> GND  - for preventing energy spikes at charging/powering decoupling capacitors 
 have been spread all across the top layer tightly wired to the ICs</li>
+<img src="Images/GND_layer.png", alt="4.Bottom layer"><br><br>
+
 <li> Power - main copper layer is tied to 3V3 signal; other values wired on this 
 layer include as well: EPD_3V3, VREG, VBAT, VBUS; also P0.13 and p0.14 signal 
 pins of the MCU are wired on this layer for PCB design simplicity reasons</li>
+<img src="Images/POWER_layer.png", alt="3. Power layer"><br><br>
+
 <li> Signals - plenty of I<sup>2</sup>C interface, charger connectivity and USB data 
 are the main actors of the fourth layer out of the PCB</li>
+<img src="Images/bottom_layer.png", alt="4.Bottom layer">
 </ol>
 
 ### RF functioning
