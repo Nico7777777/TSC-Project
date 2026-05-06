@@ -2,6 +2,7 @@
 # InkTime Smartwatch
 <img src="Images/exploding_view.gif" alt="Exploding View">
 
+<img src="Images/bloc_schema.png" alt="Bloc Schema">
 ### Main components:
 <ol>
     <li><b>MCU</b></li>
